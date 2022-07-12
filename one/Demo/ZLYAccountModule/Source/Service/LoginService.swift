@@ -8,10 +8,15 @@
 
 import UIKit
 
+
+struct Err: Error{
+    
+}
+
 class LoginService: NSObject {
     static func login(username: String, password: String, complete: (Error?) -> Void) {
-        print("login success")
-        complete(nil)
+        print("_ login success Ha ha")
+        complete(Err())
     }
     
     static func validate(username: String, password: String) -> Bool {

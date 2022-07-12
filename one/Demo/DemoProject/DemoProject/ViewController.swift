@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let lotus = s(AccountLotus.self) // or lotus = kAccountLotus，但需要你管理好 kAccountLotus，尽量不要硬编码
         let accountModule: AccountLotus = LotusootCoordinator.lotusoot(lotus: lotus) as! AccountLotus
         accountModule.login(username: "zhoulingyu", password: "wow") { (error) in
-            print(error ?? "")
+            print(error ?? "1234")
         }
     }
     

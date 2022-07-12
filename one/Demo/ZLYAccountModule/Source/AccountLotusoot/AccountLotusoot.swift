@@ -19,6 +19,7 @@ class AccountLotusoot: NSObject, AccountLotus {
     }
 
     func login(username: String, password: String, complete: (Error?) -> Void) {
+        print("111")
         LoginService.login(username: username, password: password, complete: complete)
     }
     
