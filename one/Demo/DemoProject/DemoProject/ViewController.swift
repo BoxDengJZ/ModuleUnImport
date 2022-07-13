@@ -29,8 +29,10 @@ class ViewController: UIViewController {
     
     @IBAction func doLogin(_ sender: Any) {
         
-        
-        
+        let lotus = s(AccountLotus.self) // or lotus = kAccountLotus，但需要你管理好 kAccountLotus，尽量不要硬编码
+        let accountModule: AccountLotus = LotusootCoordinator.lotusoot(lotus: lotus) as! AccountLotus
+        let ctrl = accountModule.enter(username: "zhoulingyu", password: "wow")
+        navigationController?.pushViewController(ctrl, animated: true)
         
         
         

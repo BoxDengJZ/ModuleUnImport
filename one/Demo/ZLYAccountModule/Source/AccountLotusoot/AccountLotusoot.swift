@@ -18,6 +18,10 @@ class AccountLotusoot: NSObject, AccountLotus {
         return OtherService.email(username: "zhoulingyu")
     }
 
+    func enter(username: String, password: String) -> UIViewController{
+        LoginService.enter(username: username, password: password)
+    }
+    
     func login(username: String, password: String, complete: (Error?) -> Void) {
         print("111")
         LoginService.login(username: username, password: password, complete: complete)

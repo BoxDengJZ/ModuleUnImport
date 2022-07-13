@@ -12,6 +12,9 @@ public let kAccountLotus = "AccountLotus"   // or s(AccountLotus.self) 减少硬
 
 public protocol AccountLotus {
     func login(username: String, password: String, complete: (Error?) -> Void)
+    func enter(username: String, password: String) -> UIViewController
+    
+    
     func register(username: String, password: String, complete: (Error?) -> Void)
     func email(username: String) -> String
     func showLoginVC(username: String, password: String)

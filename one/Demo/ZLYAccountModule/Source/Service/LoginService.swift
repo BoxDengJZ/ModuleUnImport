@@ -19,6 +19,10 @@ class LoginService: NSObject {
         complete(Err())
     }
     
+    static func enter(username: String, password: String) -> UIViewController {
+        return LoginViewController()
+    }
+    
     static func validate(username: String, password: String) -> Bool {
         print("login validate success")
         return true
