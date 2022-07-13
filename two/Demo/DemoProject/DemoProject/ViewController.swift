@@ -9,20 +9,34 @@
 import UIKit
 import ZLYPublicModule
 
+
+protocol A{
+
+}
+
+protocol B: A{}
+
+extension A{
+    func name() -> String {
+        return "A"
+    }
+}
+
+
+struct AA: A{
+    func name() -> String {
+        return "A11"
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // --------- 服务调用 ---------
-
-        // 1. 模块间调用服务
-        let lotus = s(AccountLotus.self) // or lotus = kAccountLotus，但需要你管理好 kAccountLotus，尽量不要硬编码
-        let accountModule: AccountLotus = LotusootCoordinator.lotusoot(lotus: lotus) as! AccountLotus
-        accountModule.login(username: "zhoulingyu", password: "wow") { (error) in
-            print(error ?? "1234")
-        }
-        accountModule.generateName()
+        let acc: A = AA()
+         print(acc.name())
+        let aa: Name = Abc()
+       // print(aa.name())
     }
     
     

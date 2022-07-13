@@ -9,6 +9,11 @@
 import UIKit
 import ZLYPublicModule
 
+
+
+
+
+
 // @NameSpace(ZLYAccountModule)
 // @Lotusoot(AccountLotusoot)
 // @Lotus(AccountLotus)
@@ -44,5 +49,11 @@ class AccountLotusoot: NSObject, AccountLotus {
         // 或者传入 rootvc
         // 更好的方式是自己的非耦合 UI 跳转处理模块
         print("show login view controller")
+    }
+}
+
+public extension Name{
+    func name() -> String{
+        return "456"
     }
 }

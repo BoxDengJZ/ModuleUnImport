@@ -10,8 +10,13 @@ import UIKit
 
 public let kAccountLotus = "AccountLotus"   // or s(AccountLotus.self) 减少硬编码，使编译可以检测出 error
 
-public protocol AccountLotus {
-    func generateName() -> String
+
+public protocol Name {
+
+}
+
+
+public protocol AccountLotus: Name {
     
     func login(username: String, password: String, complete: (Error?) -> Void)
     func enter(username: String, password: String) -> UIViewController
@@ -20,4 +25,13 @@ public protocol AccountLotus {
     func register(username: String, password: String, complete: (Error?) -> Void)
     func email(username: String) -> String
     func showLoginVC(username: String, password: String)
+}
+
+
+public struct Abc: Name{
+    public func name() -> String{
+        return "123"
+    }
+    
+    public init(){}
 }
