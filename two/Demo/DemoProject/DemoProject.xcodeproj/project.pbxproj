@@ -13,9 +13,7 @@
 		82AFB4191ED6AE8F00C55582 /* MainLotusoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AFB4171ED6AE8F00C55582 /* MainLotusoot.swift */; };
 		82AFB41E1ED6AED800C55582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AFB41D1ED6AED800C55582 /* ViewController.swift */; };
 		82AFB4361ED6B00500C55582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AFB4351ED6B00500C55582 /* AppDelegate.swift */; };
-		82F9C7AC1FD67D6400029DDB /* Lotusoot.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82F9C7AB1FD67D6400029DDB /* Lotusoot.plist */; };
 		82F9C7B31FD68A0600029DDB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C7AE1FD68A0600029DDB /* Extension.swift */; };
-		82F9C7B41FD68A0600029DDB /* Lotusoot.py in Resources */ = {isa = PBXBuildFile; fileRef = 82F9C7AF1FD68A0600029DDB /* Lotusoot.py */; };
 		82F9C7B51FD68A0600029DDB /* LotusootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C7B01FD68A0600029DDB /* LotusootCoordinator.swift */; };
 		82F9C7B61FD68A0600029DDB /* LotusootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C7B11FD68A0600029DDB /* LotusootRouter.swift */; };
 		82F9C7B71FD68A0600029DDB /* LotusootURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C7B21FD68A0600029DDB /* LotusootURL.swift */; };
@@ -45,9 +43,7 @@
 		82AFB4171ED6AE8F00C55582 /* MainLotusoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLotusoot.swift; sourceTree = "<group>"; };
 		82AFB41D1ED6AED800C55582 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82AFB4351ED6B00500C55582 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82F9C7AB1FD67D6400029DDB /* Lotusoot.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lotusoot.plist; sourceTree = SOURCE_ROOT; };
 		82F9C7AE1FD68A0600029DDB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		82F9C7AF1FD68A0600029DDB /* Lotusoot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Lotusoot.py; sourceTree = "<group>"; };
 		82F9C7B01FD68A0600029DDB /* LotusootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotusootCoordinator.swift; sourceTree = "<group>"; };
 		82F9C7B11FD68A0600029DDB /* LotusootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotusootRouter.swift; sourceTree = "<group>"; };
 		82F9C7B21FD68A0600029DDB /* LotusootURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotusootURL.swift; sourceTree = "<group>"; };
@@ -118,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				82F9C7AD1FD68A0600029DDB /* Lotusoot */,
-				82F9C7AB1FD67D6400029DDB /* Lotusoot.plist */,
 				822B18071FD6408800D14C15 /* Info.plist */,
 				822B180B1FD640E300D14C15 /* LaunchScreen.storyboard */,
 				822B18091FD640E300D14C15 /* Main.storyboard */,
@@ -150,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				82F9C7AE1FD68A0600029DDB /* Extension.swift */,
-				82F9C7AF1FD68A0600029DDB /* Lotusoot.py */,
 				82F9C7B01FD68A0600029DDB /* LotusootCoordinator.swift */,
 				82F9C7B11FD68A0600029DDB /* LotusootRouter.swift */,
 				82F9C7B21FD68A0600029DDB /* LotusootURL.swift */,
@@ -167,7 +161,6 @@
 			buildConfigurationList = 82AFB3EC1ED6AE1F00C55582 /* Build configuration list for PBXNativeTarget "DemoProject" */;
 			buildPhases = (
 				1C451DEE166AA06ACCEF9C8C /* [CP] Check Pods Manifest.lock */,
-				82AFB4321ED6AFAF00C55582 /* Lotusoot */,
 				82AFB3C01ED6AE1F00C55582 /* Sources */,
 				82AFB3C11ED6AE1F00C55582 /* Frameworks */,
 				82AFB3C21ED6AE1F00C55582 /* Resources */,
@@ -225,9 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				822B180D1FD640E400D14C15 /* Main.storyboard in Resources */,
-				82F9C7AC1FD67D6400029DDB /* Lotusoot.plist in Resources */,
 				822B180E1FD640E400D14C15 /* LaunchScreen.storyboard in Resources */,
-				82F9C7B41FD68A0600029DDB /* Lotusoot.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,20 +277,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		82AFB4321ED6AFAF00C55582 /* Lotusoot */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Lotusoot;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "python Lotusoot.py ${SRC_ROOT}.. ${SRCROOT} Lotusoot\n# 参数1： 扫描路径\n# 参数2： ${SRCROOT}，Lotusoot.plist 输出地址\n# 参数3： Lotusoot 命名后缀（可省略），省略将会导致脚本执行时间变长\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
