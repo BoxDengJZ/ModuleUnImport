@@ -14,6 +14,14 @@ import ZLYPublicModule
 // @Lotus(AccountLotus)
 class AccountLotusoot: NSObject, AccountLotus {
     
+    
+    func generateName() -> String{
+        struct Bar { }
+        let barName = String(reflecting: Bar.self)
+        print(barName)
+        return barName
+    }
+    
     func email(username: String) -> String {
         return OtherService.email(username: "zhoulingyu")
     }

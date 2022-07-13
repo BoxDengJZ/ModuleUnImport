@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         accountModule.login(username: "zhoulingyu", password: "wow") { (error) in
             print(error ?? "1234")
         }
+        accountModule.generateName()
     }
     
     

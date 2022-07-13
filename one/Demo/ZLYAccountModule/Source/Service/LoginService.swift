@@ -15,7 +15,6 @@ struct Err: Error{
 
 class LoginService: NSObject {
     static func login(username: String, password: String, complete: (Error?) -> Void) {
-        print("_ login success Ha ha")
         complete(Err())
     }
     
