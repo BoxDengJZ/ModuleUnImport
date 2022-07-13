@@ -52,8 +52,3 @@ class AccountLotusoot: NSObject, AccountLotus {
     }
 }
 
-public extension Name{
-    func name() -> String{
-        return "456"
-    }
-}

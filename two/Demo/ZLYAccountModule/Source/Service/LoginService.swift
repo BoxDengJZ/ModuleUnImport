@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZLYPublicModule
 
 
 struct Err: Error{
@@ -27,4 +28,11 @@ class LoginService: NSObject {
         return true
     }
     
+}
+
+
+extension Maid{
+    dynamic func loginServiceName() -> String{
+        return "qqqqqq"
+    }
 }

@@ -33,10 +33,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let acc: A = AA()
-         print(acc.name())
-        let aa: Name = Abc()
-       // print(aa.name())
+
     }
     
     
