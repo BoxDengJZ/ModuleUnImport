@@ -20,13 +20,7 @@ import ZLYPublicModule
 class AccountLotusoot: NSObject, AccountLotus {
     
     
-    func generateName() -> String{
-        struct Bar { }
-        let barName = String(reflecting: Bar.self)
-        print(barName)
-        return barName
-    }
-    
+
     func email(username: String) -> String {
         return OtherService.email(username: "zhoulingyu")
     }
@@ -52,3 +46,15 @@ class AccountLotusoot: NSObject, AccountLotus {
     }
 }
 
+
+
+class AccountLotusC: NSObject, Maid{
+    var name: String{
+        
+        let barName = String(reflecting: AccountLotusC.self)
+        print(barName)
+        
+        
+        return "123"
+    }
+}

@@ -8,9 +8,6 @@
 
 import UIKit
 
-public let kAccountLotus = "AccountLotus"   // or s(AccountLotus.self) 减少硬编码，使编译可以检测出 error
-
-
 public protocol AccountLotus {
     
     func login(username: String, password: String, complete: (Error?) -> Void)
@@ -23,6 +20,7 @@ public protocol AccountLotus {
 }
 
 
-public class Maid: NSObject{
-    
+public protocol Maid{
+    var name: String{ get }
 }
+ 
