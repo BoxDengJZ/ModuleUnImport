@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let lotus = s(AccountLotus.self)
-        let accountModule = LotusootCoordinator.lotusoot(lotus: lotus)
+        let accountModule: AccountLotus = LotusootCoordinator.lotusoot(lotus: lotus) as! AccountLotus
+        accountModule.login(username: "zhoulingyu", password: "wow") { (error) in
+            print(error ?? "1234")
+        }
     }
     
     

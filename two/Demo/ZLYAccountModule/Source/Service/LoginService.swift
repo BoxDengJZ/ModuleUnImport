@@ -30,9 +30,3 @@ class LoginService: NSObject {
     
 }
 
-
-extension Maid{
-    dynamic func loginServiceName() -> String{
-        return "qqqqqq"
-    }
-}

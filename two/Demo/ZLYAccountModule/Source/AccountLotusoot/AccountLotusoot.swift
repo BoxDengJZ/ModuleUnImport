@@ -50,11 +50,6 @@ class AccountLotusoot: NSObject, AccountLotus {
 
 class AccountLotusC: NSObject, Maid{
     var name: String{
-        
-        let barName = String(reflecting: AccountLotusC.self)
-        print(barName)
-        
-        
-        return "123"
+        return String(reflecting: AccountLotusoot.self)
     }
 }

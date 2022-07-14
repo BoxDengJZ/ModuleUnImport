@@ -11,9 +11,12 @@ import ZLYPublicModule
 import MachO
 
 @objc public class LotusootCoordinator: NSObject {
-
     
     lazy var moduleNames: [String] = { () -> [String] in
+        let mainNameTmp = NSStringFromClass(LotusootCoordinator.self)
+        guard let mainName = mainNameTmp.components(separatedBy: ".").first else{
+            fatalError("emptyMainProject")
+        }
         var result = [String]()
         let cnt = _dyld_image_count()
          for i in 0..<cnt{
@@ -21,7 +24,9 @@ import MachO
                  let name = String(validatingUTF8: tmp)
                  if let candidate = name, candidate.hasPrefix("/Users"){
                      if let tmp = candidate.components(separatedBy: "/").last{
-                         print(tmp)
+                         if tmp != mainName{
+                             result.append(tmp)
+                         }
                      }
                  }
                  
@@ -57,26 +62,31 @@ import MachO
             return val
         }
         else{
-            var result: Any? = nil
             var i = 0
             let names = LotusootCoordinator.sharedInstance.moduleNames
             let cnt = names.count
             while i < cnt{
                 let classType = NSClassFromString(names[i] + "." + lotus + "C") as? NSObject.Type
                 if let type = classType {
-                    let lotusoot = type.init()
-                    if let maid = lotusoot as? Maid{
-                        print(maid.name)
-                        register(lotusoot: lotusoot, lotusName: lotus)
-                        result = lotusoot
+                    let assist = type.init()
+                    if let maid = assist as? Maid{
+                        let classType = NSClassFromString(maid.name) as? NSObject.Type
+                        if let type = classType {
+                            let lotusoot = type.init()
+                            register(lotusoot: lotusoot, lotusName: lotus)
+                        }
                         LotusootCoordinator.sharedInstance.moduleNames.remove(at: i)
                         break
                     }
                 }
                 i+=1
             }
-            
-            return result
+            if let val = sharedInstance.lotusootMap[lotus]{
+                return val
+            }
+            else{
+                fatalError("name Module of" + lotus)
+            }
         }
     }
     
